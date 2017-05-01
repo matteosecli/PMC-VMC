@@ -28,5 +28,5 @@ If everything goes as it should, you now have an executable `ProjectionMC` in yo
 
 	./ProjectionMC
 	
-####Notes
+**Notes:**
 For the VMC simulator, the `VariationalMC.pro` file also contains linking to LAPACK, BLAS and OpenMP. While not strictly needed here, they can be used to speedup Armadillo operations at a certain point. Since you have Armadillo you should also have those libraries (and therefore there should be no issue), but if you really have problems you can just link only Armadillo by commenting the proper lines as explained in the file. I tested it and it seems to work.
