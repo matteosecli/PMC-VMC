@@ -271,7 +271,7 @@
 		\end{equation}
 		\item Staggered magnetization:
 		\begin{equation}
-			m = \Braket{ \left\lvert \frac{1}{L}\sum_{i=1}^{L}(-1)^iS_{i}^{z} \right\rvert }
+			m^2 = \Braket{ \left( \frac{1}{L}\sum_{i=1}^{L}(-1)^iS_{i}^{z} \right)^2 }
 		\end{equation}
 		\item First neighbor correlation function:
 		\begin{equation}
@@ -334,12 +334,23 @@
 	
 \end{frame}
 
+%\begin{frame}{Simulation results}
+%
+%	\begin{figure}
+%		\centering
+%		\includegraphics[width=\textwidth]{m_VMC}
+%		\label{fig:m_VMC}
+%		\caption{Extrapolation for $L \to \infty$.}
+%	\end{figure}
+%	
+%\end{frame}
+
 \begin{frame}{Simulation results}
 
 	\begin{figure}
 		\centering
-		\includegraphics[width=\textwidth]{m_VMC}
-		\label{fig:m_VMC}
+		\includegraphics[width=\textwidth]{m2_VMC}
+		\label{fig:m2_VMC}
 		\caption{Extrapolation for $L \to \infty$.}
 	\end{figure}
 	
@@ -360,12 +371,12 @@
 
 	\begin{table}[H]
 	 	\begin{center}
-	 		\begin{tabular}{lS[table-format=2.7]S[table-format=2.5]S[table-format=2.7]}
+	 		\begin{tabular}{lS[table-format=2.7]S[table-format=2.1]S[table-format=2.7]}
 				\toprule
-	 			{Method} & {$E_0$ [$J$]} & {$m$} & {$C_1$} \\
+	 			{Method} & {$E_0$ [$J$]} & {$m^2$} & {$C_1$} \\
 				\midrule
 				Bethe ansatz\footnote{$L \to \infty$, exact.} & -0.443147 & 0 & -0.147716 \\
-				VMC\footnote{$L \to \infty$, upper bound.} & -0.44216 \pm 0.00001 & 0.039 \pm 0.003 & -0.14423 \pm 0.00005 \\
+				VMC\footnote{$L \to \infty$, upper bound.} & -0.44216 \pm 0.00001 & 0 & -0.14417 \pm 0.00007 \\
 				ED/Lanczos\footnotemark & -0.44304 \pm 0.00005 & {--} & {--} \\
 	 			\bottomrule
 	 		\end{tabular}
