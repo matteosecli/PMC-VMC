@@ -19,7 +19,7 @@ function [x0, x0_error] = meanposition( x, bx, simlen )
     Gnp = zeros(1,Nbins);
     for BinIdx = 1:Nbins
         Gnp(BinIdx) = prod(bx(1+simlen*(BinIdx-1):simlen*BinIdx-1));
-        x0_binned(BinIdx) = Gnp(BinIdx)*x(simlen*BinIdx);
+        x0_binned(BinIdx) = Gnp(BinIdx)*x(floor(simlen*(BinIdx-0.5)));
     end
     x0 = sum(x0_binned)/sum(Gnp);
     x0_error = x0*sqrt( (binanalysis(x0_binned,'No','No')/mean(x0_binned))^2 + (binanalysis(Gnp,'No','No')/mean(Gnp))^2 );

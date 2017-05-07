@@ -140,7 +140,7 @@ int main()
         ofile << setiosflags(ios::showpoint | ios::uppercase);
         ofile << setprecision(8);
     /* Initialize the first values */
-        x = (int) round(ran1(&idum)*L);
+        x = (int) round(ran1(&idum)*(L-1))+1;
         GUtils(x, L, t, V, Lambda, GTransPS, GTransOS, GTransNS, bx);
         ELocal = Lambda - bx ;
     /* Write onscreen info */

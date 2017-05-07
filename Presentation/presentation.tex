@@ -166,7 +166,7 @@
 		\centering
 		\includegraphics[width=\textwidth]{Evsp-10E7}
 		\label{fig:Evsp-10E7}
-		\caption{$E_0$ for $L=20$, $t=1$, $V=1$ and $N=10^7$. The mean position is $x_0 = 1.80 \pm 0.05$.}
+		\caption{$E_0$ for $L=20$, $t=1$, $V=1$ and $N=10^7$. The mean position is $x_0 = 1.47 \pm 0.04$.}
 	\end{figure}
 	
 \end{frame}
@@ -177,7 +177,7 @@
 		\centering
 		\includegraphics[width=\textwidth]{Evsp-10E7-V2}
 		\label{fig:Evsp-10E7-V2}
-		\caption{$E_0$ for $L=20$, $t=1$, $V=2$ and $N=10^7$. The mean position is $x_0 = 1.46 \pm 0.05$.}
+		\caption{$E_0$ for $L=20$, $t=1$, $V=2$ and $N=10^7$. The mean position is $x_0 = 1.20 \pm 0.04$.}
 	\end{figure}
 	
 \end{frame}
@@ -188,7 +188,7 @@
 		\centering
 		\includegraphics[width=\textwidth]{Evsp-10E8}
 		\label{fig:Evsp-10E8}
-		\caption{$E_0$ for $L=20$, $t=1$, $V=1$ and $N=10^8$. The mean position is $x_0 = 1.79 \pm 0.01$.}
+		\caption{$E_0$ for $L=20$, $t=1$, $V=1$ and $N=10^8$. The mean position is $x_0 = 1.48 \pm 0.01$.}
 	\end{figure}
 
 \end{frame}
@@ -199,8 +199,29 @@
 		\centering
 		\includegraphics[width=\textwidth]{Evsp-10E8-V2}
 		\label{fig:Evsp-10E8-V2}
-		\caption{$E_0$ for $L=20$, $t=1$, $V=1$ and $N=10^8$. The mean position is $x_0 = 1.46 \pm 0.01$.}
+		\caption{$E_0$ for $L=20$, $t=1$, $V=2$ and $N=10^8$. The mean position is $x_0 = 1.21 \pm 0.01$.}
 	\end{figure}
+
+\end{frame}
+
+\begin{frame}{Summary}
+
+	\begin{table}[H]
+	 	\begin{center}
+	 		\begin{tabular}{lS[table-format=1.5]S[table-format=1.4]S[table-format=1.5]S[table-format=1.5]S[table-format=1.4]S[table-format=1.5]}
+				\toprule
+				 & \multicolumn{3}{c}{$E_0$ [$t$]} & \multicolumn{3}{c}{$x_0$} \\
+				\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+	 			 & {ED} & {PMC} & {VMC} & {ED} & {PMC} & {VMC} \\
+				\midrule
+				$V/t=1$ & 0.25381 & 0.253 \pm 0.002 & 0.3306 \pm 0.0001 & 1.46127 & 1.48 \pm 0.01 & 1.3747 \pm 0.0002 \\
+				$V/t=2$ & 1.54913 & 1.55 \pm 0.01 & 1.5773 \pm 0.0001 & 1.18622 & 1.21 \pm 0.01 & 1.1566 \pm 0.0001\\
+	 			\bottomrule
+	 		\end{tabular}
+	 	\end{center}
+	 	\caption{Comparison of results for the ground state energy and mean position obtained with three different methods.}
+	 	\label{tab:results-PMC}
+	\end{table}
 
 \end{frame}
 
@@ -290,16 +311,16 @@
 	
 \end{frame}
 
-\begin{frame}{Execution times}
-
-	\begin{figure}
-		\centering
-		\includegraphics[width=\textwidth]{cputimes}
-		\label{fig:cputimes}
-		\caption{CPU time per variational parameter value with $10^7$ MC steps.}
-	\end{figure}
-	
-\end{frame}
+%\begin{frame}{Execution times}
+%
+%	\begin{figure}
+%		\centering
+%		\includegraphics[width=\textwidth]{cputimes}
+%		\label{fig:cputimes}
+%		\caption{CPU time per variational parameter value with $10^7$ MC steps.}
+%	\end{figure}
+%	
+%\end{frame}
 
 \begin{frame}{Simulation results}
 
